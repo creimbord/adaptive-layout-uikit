@@ -8,6 +8,10 @@
 
 import UIKit
 
+var dimension: Dimension {
+    UIDevice.current.orientation.isPortrait ? .width : .height
+}
+
 func resized(withScreenSizeOf screenSize: Device, size: CGSize, basedOn dimension: Dimension) -> CGSize {
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height

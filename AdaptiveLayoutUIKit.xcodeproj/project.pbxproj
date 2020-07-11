@@ -20,6 +20,7 @@
 		CCA75E4024B9E3DD00586AFB /* Constraintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E3F24B9E3DD00586AFB /* Constraintable.swift */; };
 		CCA75E4324B9E42D00586AFB /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E4224B9E42D00586AFB /* CGFloatExtension.swift */; };
 		CCA75E4524B9E44600586AFB /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E4424B9E44600586AFB /* NSLayoutConstraintExtension.swift */; };
+		CCA75E4724B9E4A400586AFB /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E4624B9E4A400586AFB /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CCA75E0F24B9E17800586AFB /* AdaptiveLayoutUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveLayoutUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA75E0F24B9E17800586AFB /* Black Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA75E1224B9E17800586AFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA75E1424B9E17800586AFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CCA75E1624B9E17800586AFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		CCA75E3F24B9E3DD00586AFB /* Constraintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraintable.swift; sourceTree = "<group>"; };
 		CCA75E4224B9E42D00586AFB /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		CCA75E4424B9E44600586AFB /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
+		CCA75E4624B9E4A400586AFB /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,7 @@
 		CCA75E1024B9E17800586AFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CCA75E0F24B9E17800586AFB /* AdaptiveLayoutUIKit.app */,
+				CCA75E0F24B9E17800586AFB /* Black Square.app */,
 				CCA75E2524B9E17A00586AFB /* AdaptiveLayoutUIKitTests.xctest */,
 			);
 			name = Products;
@@ -136,6 +138,7 @@
 			children = (
 				CCA75E3724B9E21900586AFB /* Dimension.swift */,
 				CCA75E3924B9E23800586AFB /* Device.swift */,
+				CCA75E4624B9E4A400586AFB /* Font.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -182,7 +185,7 @@
 			);
 			name = AdaptiveLayoutUIKit;
 			productName = AdaptiveLayoutUIKit;
-			productReference = CCA75E0F24B9E17800586AFB /* AdaptiveLayoutUIKit.app */;
+			productReference = CCA75E0F24B9E17800586AFB /* Black Square.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CCA75E2424B9E17A00586AFB /* AdaptiveLayoutUIKitTests */ = {
@@ -268,6 +271,7 @@
 			files = (
 				CCA75E3824B9E21900586AFB /* Dimension.swift in Sources */,
 				CCA75E4524B9E44600586AFB /* NSLayoutConstraintExtension.swift in Sources */,
+				CCA75E4724B9E4A400586AFB /* Font.swift in Sources */,
 				CCA75E1724B9E17800586AFB /* ViewController.swift in Sources */,
 				CCA75E1324B9E17800586AFB /* AppDelegate.swift in Sources */,
 				CCA75E3D24B9E39200586AFB /* AdaptiveLayoutHelper.swift in Sources */,
@@ -441,8 +445,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.artyukhinrodion.AdaptiveLayoutUIKit.AdaptiveLayoutUIKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.artyukhinrodion.AdaptiveLayoutUIKit;
+				PRODUCT_NAME = "Black Square";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,8 +463,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.artyukhinrodion.AdaptiveLayoutUIKit.AdaptiveLayoutUIKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.artyukhinrodion.AdaptiveLayoutUIKit;
+				PRODUCT_NAME = "Black Square";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
