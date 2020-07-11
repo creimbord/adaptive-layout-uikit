@@ -14,6 +14,8 @@
 		CCA75E1C24B9E17A00586AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA75E1B24B9E17A00586AFB /* Assets.xcassets */; };
 		CCA75E1F24B9E17A00586AFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA75E1D24B9E17A00586AFB /* LaunchScreen.storyboard */; };
 		CCA75E2A24B9E17A00586AFB /* AdaptiveLayoutUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E2924B9E17A00586AFB /* AdaptiveLayoutUIKitTests.swift */; };
+		CCA75E3824B9E21900586AFB /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E3724B9E21900586AFB /* Dimension.swift */; };
+		CCA75E3A24B9E23900586AFB /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E3924B9E23800586AFB /* Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		CCA75E2524B9E17A00586AFB /* AdaptiveLayoutUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveLayoutUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA75E2924B9E17A00586AFB /* AdaptiveLayoutUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutUIKitTests.swift; sourceTree = "<group>"; };
 		CCA75E2B24B9E17A00586AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA75E3724B9E21900586AFB /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		CCA75E3924B9E23800586AFB /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,9 @@
 			children = (
 				CCA75E1224B9E17800586AFB /* AppDelegate.swift */,
 				CCA75E1424B9E17800586AFB /* SceneDelegate.swift */,
-				CCA75E1624B9E17800586AFB /* ViewController.swift */,
-				CCA75E1824B9E17800586AFB /* Main.storyboard */,
-				CCA75E1B24B9E17A00586AFB /* Assets.xcassets */,
-				CCA75E1D24B9E17A00586AFB /* LaunchScreen.storyboard */,
-				CCA75E2024B9E17A00586AFB /* Info.plist */,
+				CCA75E3624B9E1F800586AFB /* Enums */,
+				CCA75E3424B9E1A400586AFB /* View */,
+				CCA75E3524B9E1C200586AFB /* Resources */,
 			);
 			path = AdaptiveLayoutUIKit;
 			sourceTree = "<group>";
@@ -97,6 +99,34 @@
 				CCA75E2B24B9E17A00586AFB /* Info.plist */,
 			);
 			path = AdaptiveLayoutUIKitTests;
+			sourceTree = "<group>";
+		};
+		CCA75E3424B9E1A400586AFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCA75E1824B9E17800586AFB /* Main.storyboard */,
+				CCA75E1624B9E17800586AFB /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCA75E3524B9E1C200586AFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCA75E1B24B9E17A00586AFB /* Assets.xcassets */,
+				CCA75E1D24B9E17A00586AFB /* LaunchScreen.storyboard */,
+				CCA75E2024B9E17A00586AFB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCA75E3624B9E1F800586AFB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				CCA75E3724B9E21900586AFB /* Dimension.swift */,
+				CCA75E3924B9E23800586AFB /* Device.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA75E3824B9E21900586AFB /* Dimension.swift in Sources */,
 				CCA75E1724B9E17800586AFB /* ViewController.swift in Sources */,
 				CCA75E1324B9E17800586AFB /* AppDelegate.swift in Sources */,
 				CCA75E1524B9E17800586AFB /* SceneDelegate.swift in Sources */,
+				CCA75E3A24B9E23900586AFB /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JY7W272GQ;
-				INFOPLIST_FILE = AdaptiveLayoutUIKit/Info.plist;
+				INFOPLIST_FILE = AdaptiveLayoutUIKit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JY7W272GQ;
-				INFOPLIST_FILE = AdaptiveLayoutUIKit/Info.plist;
+				INFOPLIST_FILE = AdaptiveLayoutUIKit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
