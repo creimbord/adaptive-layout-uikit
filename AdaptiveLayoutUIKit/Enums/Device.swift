@@ -14,6 +14,8 @@ enum Device {
     case iPhone8Plus
     case iPhone11Pro
     case iPhone11ProMax
+    
+    static let baseScreenSize: Device = .iPhoneSE
 }
 
 extension Device: RawRepresentable {

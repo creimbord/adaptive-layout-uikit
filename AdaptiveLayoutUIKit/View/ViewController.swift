@@ -83,15 +83,15 @@ private extension ViewController {
     }
     
     var buttonSize: CGSize {
-        resized(withScreenSizeOf: .iPhoneSE, size: CGSize(width: 200, height: 44), basedOn: .height)
+        resized(size: CGSize(width: 200, height: 44), basedOn: .height)
     }
     
     var topSpace: CGFloat {
-        adapted(withScreenSizeOf: .iPhoneSE, dimensionSize: 30, to: .height)
+        adapted(dimensionSize: 30, to: .height)
     }
     
     var cornerRadius: CGFloat {
-        adapted(withScreenSizeOf: .iPhoneSE, dimensionSize: 8, to: dimension)
+        adapted(dimensionSize: 8, to: dimension)
     }
     
     func setupButtonConstraints() {

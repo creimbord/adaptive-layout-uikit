@@ -33,19 +33,13 @@ extension Constraintable {
     
     func setVerticalConstraints() {
         verticalConstraints?.forEach { (constraint) in
-            constraint.adaptConstraint(
-                usingScreenSizeOf: .iPhoneSE,
-                basedOn: .height
-            )
+            constraint.adaptConstraint(basedOn: .height)
         }
     }
     
     func setHorizontalConstraints() {
         horizontalConstraints?.forEach { (constraint) in
-            constraint.adaptConstraint(
-                usingScreenSizeOf: .iPhoneSE,
-                basedOn: .width
-            )
+            constraint.adaptConstraint(basedOn: .width)
         }
     }
 }
@@ -67,19 +61,19 @@ extension Constraintable {
         resetHorizontalConstants()
     }
     
-    private func resetVerticalConstants() {
-        guard let verticalConstants = initialConstants?.vertical else { return }
+    private func reset(constants: [CGFloat]?, of constraints: [NSLayoutConstraint]?) {
+        guard let constants = constants else { return }
         
-        verticalConstraints?.indices.forEach { (index) in
-            verticalConstraints?[index].constant = verticalConstants[index]
+        constraints?.indices.forEach { (index) in
+            constraints?[index].constant = constants[index]
         }
     }
     
+    private func resetVerticalConstants() {
+        reset(constants: initialConstants?.vertical, of: verticalConstraints)
+    }
+    
     private func resetHorizontalConstants() {
-        guard let horizontalConstants = initialConstants?.horizontal else { return }
-        
-        horizontalConstraints?.indices.forEach { (index) in
-            horizontalConstraints?[index].constant = horizontalConstants[index]
-        }
+        reset(constants: initialConstants?.horizontal, of: horizontalConstraints)
     }
 }

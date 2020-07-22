@@ -12,7 +12,7 @@ var dimension: Dimension {
     UIDevice.current.orientation.isPortrait ? .width : .height
 }
 
-func resized(withScreenSizeOf screenSize: Device, size: CGSize, basedOn dimension: Dimension) -> CGSize {
+func resized(size: CGSize, basedOn dimension: Dimension) -> CGSize {
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
     
@@ -23,18 +23,18 @@ func resized(withScreenSizeOf screenSize: Device, size: CGSize, basedOn dimensio
     switch dimension {
     case .width:
         ratio  = size.height / size.width
-        width  = screenWidth * (size.width / screenSize.rawValue.width)
+        width  = screenWidth * (size.width / Device.baseScreenSize.rawValue.width)
         height = width * ratio
     case .height:
         ratio  = size.width / size.height
-        height = screenHeight * (size.height / screenSize.rawValue.height)
+        height = screenHeight * (size.height / Device.baseScreenSize.rawValue.height)
         width  = height * ratio
     }
     
     return CGSize(width: width, height: height)
 }
 
-func adapted(withScreenSizeOf screenSize: Device, dimensionSize: CGFloat, to dimension: Dimension) -> CGFloat {
+func adapted(dimensionSize: CGFloat, to dimension: Dimension) -> CGFloat {
     let screenWidth  = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
     
@@ -43,10 +43,10 @@ func adapted(withScreenSizeOf screenSize: Device, dimensionSize: CGFloat, to dim
     
     switch dimension {
     case .width:
-        ratio = dimensionSize / screenSize.rawValue.width
+        ratio = dimensionSize / Device.baseScreenSize.rawValue.width
         resultDimensionSize = screenWidth * ratio
     case .height:
-        ratio = dimensionSize / screenSize.rawValue.height
+        ratio = dimensionSize / Device.baseScreenSize.rawValue.height
         resultDimensionSize = screenHeight * ratio
     }
     

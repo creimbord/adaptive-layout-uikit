@@ -10,6 +10,6 @@ import UIKit
 
 extension CGFloat {
     var adaptedFontSize: CGFloat {
-        adapted(withScreenSizeOf: .iPhoneSE, dimensionSize: self, to: dimension)
+        adapted(dimensionSize: self, to: dimension)
     }
 }

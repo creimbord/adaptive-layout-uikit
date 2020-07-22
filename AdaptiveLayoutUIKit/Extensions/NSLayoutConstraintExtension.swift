@@ -9,14 +9,7 @@
 import UIKit
 
 extension NSLayoutConstraint {
-    func adaptConstraint(
-        usingScreenSizeOf screenSize: Device,
-        basedOn dimension: Dimension
-    ) {
-        self.constant = adapted(
-            withScreenSizeOf: screenSize,
-            dimensionSize: self.constant,
-            to: dimension
-        )
+    func adaptConstraint(basedOn dimension: Dimension) {
+        self.constant = adapted(dimensionSize: self.constant, to: dimension)
     }
 }
