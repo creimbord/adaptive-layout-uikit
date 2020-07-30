@@ -8,10 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, Constraintable {
-    
-    // MARK: - Properties
-    var initialConstants: (vertical: [CGFloat], horizontal: [CGFloat])?
+class ViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,7 +19,6 @@ class ViewController: UIViewController, Constraintable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        saveInitialConstants()
         setupViews()
         setupButtonConstraints()
     }
@@ -30,14 +26,10 @@ class ViewController: UIViewController, Constraintable {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         setupFonts()
-        resetConstants()
-        setupConstraints()
+        updateConstraints()
     }
     
     // MARK: - Constraints
-    @IBOutlet var verticalConstraints: [NSLayoutConstraint]?
-    
-    // MARK: - Programmatic constraints
     var heightConstraint = NSLayoutConstraint()
     var widthConstraint  = NSLayoutConstraint()
     var topConstraint    = NSLayoutConstraint()
@@ -77,9 +69,9 @@ private extension ViewController {
 
 // MARK: - Setup constraints
 private extension ViewController {
-    func setupConstraints() {
-        setVerticalConstraints()
+    func updateConstraints() {
         updateButtonConstraints()
+        view.updateAdaptedConstraints()
     }
     
     var buttonSize: CGSize {
@@ -100,10 +92,12 @@ private extension ViewController {
         topConstraint    = button.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: topSpace)
         centerConstraint = button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         
-        widthConstraint.isActive  = true
-        heightConstraint.isActive = true
-        topConstraint.isActive    = true
-        centerConstraint.isActive = true
+        NSLayoutConstraint.activate([
+            widthConstraint,
+            heightConstraint,
+            topConstraint,
+            centerConstraint
+        ])
     }
     
     func updateButtonConstraints() {

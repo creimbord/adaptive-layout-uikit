@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCA074AB24D2AE8D00103D47 /* AdaptedConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA074AA24D2AE8D00103D47 /* AdaptedConstraint.swift */; };
+		CCA074AD24D2C0DF00103D47 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA074AC24D2C0DF00103D47 /* UIViewExtension.swift */; };
 		CCA75E1324B9E17800586AFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E1224B9E17800586AFB /* AppDelegate.swift */; };
 		CCA75E1524B9E17800586AFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E1424B9E17800586AFB /* SceneDelegate.swift */; };
 		CCA75E1724B9E17800586AFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E1624B9E17800586AFB /* ViewController.swift */; };
@@ -17,9 +19,7 @@
 		CCA75E3824B9E21900586AFB /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E3724B9E21900586AFB /* Dimension.swift */; };
 		CCA75E3A24B9E23900586AFB /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E3924B9E23800586AFB /* Device.swift */; };
 		CCA75E3D24B9E39200586AFB /* AdaptiveLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E3C24B9E39200586AFB /* AdaptiveLayoutHelper.swift */; };
-		CCA75E4024B9E3DD00586AFB /* Constraintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E3F24B9E3DD00586AFB /* Constraintable.swift */; };
 		CCA75E4324B9E42D00586AFB /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E4224B9E42D00586AFB /* CGFloatExtension.swift */; };
-		CCA75E4524B9E44600586AFB /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E4424B9E44600586AFB /* NSLayoutConstraintExtension.swift */; };
 		CCA75E4724B9E4A400586AFB /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA75E4624B9E4A400586AFB /* Font.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCA074AA24D2AE8D00103D47 /* AdaptedConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptedConstraint.swift; sourceTree = "<group>"; };
+		CCA074AC24D2C0DF00103D47 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		CCA75E0F24B9E17800586AFB /* Black Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA75E1224B9E17800586AFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA75E1424B9E17800586AFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,9 +50,7 @@
 		CCA75E3724B9E21900586AFB /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		CCA75E3924B9E23800586AFB /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		CCA75E3C24B9E39200586AFB /* AdaptiveLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutHelper.swift; sourceTree = "<group>"; };
-		CCA75E3F24B9E3DD00586AFB /* Constraintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraintable.swift; sourceTree = "<group>"; };
 		CCA75E4224B9E42D00586AFB /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
-		CCA75E4424B9E44600586AFB /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
 		CCA75E4624B9E4A400586AFB /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +96,7 @@
 				CCA75E1224B9E17800586AFB /* AppDelegate.swift */,
 				CCA75E1424B9E17800586AFB /* SceneDelegate.swift */,
 				CCA75E3624B9E1F800586AFB /* Enums */,
-				CCA75E3E24B9E3B900586AFB /* Protocols */,
+				CCA75E3E24B9E3B900586AFB /* Subclasses */,
 				CCA75E3B24B9E34F00586AFB /* Helpers */,
 				CCA75E4124B9E41100586AFB /* Extensions */,
 				CCA75E3424B9E1A400586AFB /* View */,
@@ -151,19 +151,19 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		CCA75E3E24B9E3B900586AFB /* Protocols */ = {
+		CCA75E3E24B9E3B900586AFB /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
-				CCA75E3F24B9E3DD00586AFB /* Constraintable.swift */,
+				CCA074AA24D2AE8D00103D47 /* AdaptedConstraint.swift */,
 			);
-			path = Protocols;
+			path = Subclasses;
 			sourceTree = "<group>";
 		};
 		CCA75E4124B9E41100586AFB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CCA074AC24D2C0DF00103D47 /* UIViewExtension.swift */,
 				CCA75E4224B9E42D00586AFB /* CGFloatExtension.swift */,
-				CCA75E4424B9E44600586AFB /* NSLayoutConstraintExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,15 +270,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA75E3824B9E21900586AFB /* Dimension.swift in Sources */,
-				CCA75E4524B9E44600586AFB /* NSLayoutConstraintExtension.swift in Sources */,
 				CCA75E4724B9E4A400586AFB /* Font.swift in Sources */,
 				CCA75E1724B9E17800586AFB /* ViewController.swift in Sources */,
 				CCA75E1324B9E17800586AFB /* AppDelegate.swift in Sources */,
 				CCA75E3D24B9E39200586AFB /* AdaptiveLayoutHelper.swift in Sources */,
+				CCA074AD24D2C0DF00103D47 /* UIViewExtension.swift in Sources */,
 				CCA75E1524B9E17800586AFB /* SceneDelegate.swift in Sources */,
-				CCA75E4024B9E3DD00586AFB /* Constraintable.swift in Sources */,
 				CCA75E4324B9E42D00586AFB /* CGFloatExtension.swift in Sources */,
 				CCA75E3A24B9E23900586AFB /* Device.swift in Sources */,
+				CCA074AB24D2AE8D00103D47 /* AdaptedConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
