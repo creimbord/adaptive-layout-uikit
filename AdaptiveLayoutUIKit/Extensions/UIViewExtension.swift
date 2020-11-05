@@ -3,7 +3,7 @@
 //  AdaptiveLayoutUIKit
 //
 //  Created by Родион on 30.07.2020.
-//  Copyright © 2020 Trinity Digital. All rights reserved.
+//  Copyright © 2020 Rodion Artyukhin. All rights reserved.
 //
 
 import UIKit

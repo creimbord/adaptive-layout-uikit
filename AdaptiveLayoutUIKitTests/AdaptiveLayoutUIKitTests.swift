@@ -3,7 +3,7 @@
 //  AdaptiveLayoutUIKitTests
 //
 //  Created by Родион on 11.07.2020.
-//  Copyright © 2020 Trinity Digital. All rights reserved.
+//  Copyright © 2020 Rodion Artyukhin. All rights reserved.
 //
 
 import XCTest
