@@ -214,7 +214,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = "Trinity Digital";
+				ORGANIZATIONNAME = "Rodion Artyukhin";
 				TargetAttributes = {
 					CCA75E0E24B9E17800586AFB = {
 						CreatedOnToolsVersion = 11.5;
