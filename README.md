@@ -1,6 +1,6 @@
 # Adaptive layout for iOS in Swift
 
-<img src="/Screenshots/screens.png" height="15%">
+<img src="/Screenshots/screens.png">
 
 The example app that demonstrates how to dynamically adapt views and constraints in storyboard and programmatically.
 
